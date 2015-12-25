@@ -7,6 +7,14 @@ An __*extremely*__ basic implementation to control a Heyu interface through web 
 1. A working Node installation
 2. A properly configured Heyu installation
 
+#### Installation:
+
+1. Clone this repository
+2. `npm install`
+3. Copy `config.example.json` to `config.json`
+4. Put some string into `authenticationCode`
+5. `npm start`
+
 #### Notes:
 * Default port is 3100 (Changeable in bin/www file)
 * `authenticationCode` is a static string for extremely basic authentication
