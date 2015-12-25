@@ -4,6 +4,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+GLOBAL.config = require('nconf').argv().env().file({ file: path.join(__dirname, 'config.json') });
+
 var routes = require('./routes/index');
 
 var app = express();
